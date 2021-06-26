@@ -1,5 +1,2 @@
-link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
-
-def test_switch_driver_lang_to_es(browser):
-    browser.get(link)
-    assert browser.find_element_by_xpath("//button[@value='Añadir al carrito']")
+def test_should_see_busket_button(browser):
+    assert browser.find_element_by_css_selector("button.btn-add-to-basket")
